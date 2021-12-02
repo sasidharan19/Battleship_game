@@ -16,8 +16,14 @@ var view = {
     }
 };
 
-view.displayMiss("00");
-view.displayHit("34");
-view.displayMiss("55");
+var model = {
+    boardSize: 7,
+    numShips: 3,
+    shipLength: 3,
+    shipSunk: 0,
 
-view.displayMessage("hello there !!")
+    ships: [{locations:["06","16","44"], hits:["","",""]},
+        {locations:["24","34","44"], hits:["","",""]},
+        {locations:["10","11","12"], hits:["","",""]}]
+
+};
